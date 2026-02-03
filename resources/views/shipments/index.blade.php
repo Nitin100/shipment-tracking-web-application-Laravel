@@ -26,7 +26,7 @@
     <td>{{ $shipment->status }}</td>
     <td>{{ $shipment->created_at->format('d M Y') }}</td>
     <td>
-        <a href="/shipments/{{ $shipment->id }}" class="btn btn-sm btn-info">View</a>
+        <a href="{{ url('shipments/'. $shipment->id) }}" class="btn btn-sm btn-info">View</a>
     </td>
 </tr>
 @endforeach
